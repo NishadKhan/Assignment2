@@ -8,7 +8,7 @@ namespace Assignment_2
 {
     class Address
     {
-        private string roadNo, houseNo, city, country;
+        private string roadNo, houseNo, city, country, birthday;
 
         public Address(string roadNo, string houseNo, string city, string country)
         {
@@ -16,6 +16,7 @@ namespace Assignment_2
             this.houseNo = houseNo;
             this.city = city;
             this.country = country;
+            
         }
         public string RoadNo
         {

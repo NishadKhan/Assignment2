@@ -13,15 +13,17 @@ namespace Assignment_2
         private string accountName;
         private Double balance;
         private Address address;
+        private Birthday birthday;
         //private string v1;
         //private int v2;
 
-        public Account(string accountName, double balance, Address address)
+        public Account(string accountName, double balance, Address address,Birthday birthday)
         {
             accountNumber = ++myaccountnumber;
             this.AccountName = accountName;
             this.Balance = balance;
             this.Address = address;
+            this.birthday = birthday;
         }
 
         // /*   public Account(string v1, int v2, Address address)

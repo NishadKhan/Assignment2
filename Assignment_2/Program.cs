@@ -11,10 +11,10 @@ namespace Assignment_2
         static void Main(string[] args)
         {
             // int choice;
-            Bank mB = new Bank("Developers bank", 100);
-            mB.AddAccount(new Account("Ali", 10000, new Address("50", "23", "Dhaka", "Bangladesh")));
-            mB.AddAccount(new Account("anik", 5000, new Address("21", "10", "Gazipur", "Bangladesh")));
-            // declare variables here
+            Bank DBBL = new Bank("Developers bank", 100);
+            DBBL.AddAccount(new Account("Ali", 10000, new Address("50", "23", "Dhaka", "Bangladesh"),new Birthday(3,2,1999)));
+            DBBL.AddAccount(new Account("faisal", 5000, new Address("21", "10", "Gazipur", "Bangladesh"),new Birthday(4, 3, 1989)));
+            DBBL.AddAccount(new Account("Moin", 5000, new Address("51", "30", "Mirzapur", "Bangladesh"), new Birthday(4, 3, 1989)));
 
             Console.WriteLine("Welcome to DEVELOPERS BANK");
             Console.WriteLine("1. Open a Bank Account");
@@ -46,7 +46,7 @@ namespace Assignment_2
                 }
             }
 
-            mB.PrintAccountDetailes();
+            DBBL.PrintAccountDetailes();
             //mB.DeleteAccount(1);
             //mB.DeleteAccount(2);
 
@@ -55,9 +55,9 @@ namespace Assignment_2
             //Console.WriteLine("Enter 2 for deposit");
             //Console.WriteLine("Enter 3 for transfer");
             choice = Convert.ToInt32(Console.ReadLine());
-            mB.Transaction(choice);
+            DBBL.Transaction(choice);
 
-            mB.PrintAccountDetailes();
+            DBBL.PrintAccountDetailes();
             Console.ReadKey();
 
         }
